@@ -25,17 +25,6 @@ Este proyecto es mi portafolio personal, donde presento parte del trabajo que he
 - Preparado para despliegue en Vercel.
 - Código organizado y fácil de extender.
 
-## Estructura (referencial)
-```
-/
-├─ pages/          # Rutas de la aplicación
-├─ components/     # Componentes reutilizables
-├─ lib/            # Helpers / lógica compartida (si aplica)
-├─ public/         # Assets estáticos (imágenes, íconos)
-├─ styles/         # Configuración (globals.css, tailwind.css)
-└─ ...
-```
-
 ## Ejecución Local (usando Yarn)
 ```bash
 # Instalar dependencias
