@@ -1,41 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Portafolio Personal
 
-## Getting Started
+Este proyecto es mi portafolio personal, donde presento parte del trabajo que he realizado y me introduzco brevemente. El objetivo es ofrecer una vista clara de mis habilidades técnicas, mis intereses y algunos proyectos representativos.
 
-First, run the development server:
+## Objetivos del Portafolio
+- Mostrar proyectos y experiencias relevantes.
+- Servir como carta de presentación profesional.
+- Centralizar enlaces a mis redes y formas de contacto.
+- Experimentar con buenas prácticas de desarrollo (estructura, performance, accesibilidad, SEO).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tecnologías Principales
+- [Next.js](https://nextjs.org) (React + SSR/SSG)
+- TypeScript
+- [Tailwind CSS](https://tailwindcss.com) para estilos utilitarios y diseño responsive.
+- (Futuro) Formulario de contacto con envío de correos.
+
+## Integraciones
+- Despliegue en [Vercel](https://vercel.com).
+- (Próximo) Formulario para recibir correos (API propia o servicio externo).
+
+## Características
+- Diseño responsive con Tailwind.
+- Navegación rápida.
+- Componentes reutilizables.
+- Preparado para despliegue en Vercel.
+- Código organizado y fácil de extender.
+
+## Estructura (referencial)
+```
+/
+├─ pages/          # Rutas de la aplicación
+├─ components/     # Componentes reutilizables
+├─ lib/            # Helpers / lógica compartida (si aplica)
+├─ public/         # Assets estáticos (imágenes, íconos)
+├─ styles/         # Configuración (globals.css, tailwind.css)
+└─ ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Ejecución Local (usando Yarn)
+```bash
+# Instalar dependencias
+yarn
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# Iniciar entorno de desarrollo
+yarn dev
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Abrir en el navegador
+http://localhost:3000
+```
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
-"# portafolio" 
+Si tienes feedback o quieres colaborar, ¡bienvenido!  
+Gracias por visitar mi portafolio.
