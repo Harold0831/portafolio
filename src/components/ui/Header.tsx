@@ -1,16 +1,28 @@
 "use client"
 
-import { useState } from "react"
+import { useState, type MouseEvent } from "react"
 import Link from "next/link"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
-    { label: "Sobre mí", href: "#" },
-    { label: "Proyectos", href: "#" },
-    { label: "Contacto", href: "#" },
+    { label: "Sobre mí", href: "#About" },
+    { label: "Proyectos", href: "#Proyectos" },
+    { label: "Contacto", href: "#Contacto" },
   ]
+
+  const handleNavClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    const id = href.replace("#", "")
+    const el = document.getElementById(id)
+    if (!el) return
+    const header = document.querySelector("nav") as HTMLElement | null
+    const offset = (header?.offsetHeight ?? 64) + 8
+    const y = el.getBoundingClientRect().top + window.pageYOffset - offset
+    window.scrollTo({ top: y, behavior: "smooth" })
+    setIsOpen(false)
+  }
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
@@ -24,6 +36,7 @@ export default function Header() {
                 key={link.label}
                 href={link.href}
                 className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium"
+                onClick={(e) => handleNavClick(e, link.href)}
               >
                 {link.label}
               </a>
@@ -50,7 +63,7 @@ export default function Header() {
                 key={link.label}
                 href={link.href}
                 className="block text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium px-2 py-2"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleNavClick(e, link.href)}
               >
                 {link.label}
               </a>
