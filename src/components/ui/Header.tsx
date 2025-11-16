@@ -8,22 +8,17 @@ export default function Header() {
 
   const navLinks = [
     { label: "Sobre mí", href: "#" },
-    { label: "Experiencia", href: "#" },
     { label: "Proyectos", href: "#" },
     { label: "Contacto", href: "#" },
   ]
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
-      <div className="max-w-6xl mx-auto px-6 sm:px-8">
-        <div className="flex items-center justify-between h-16">
-          <Link href="#" className="flex items-center gap-2 font-semibold text-lg">
-            <div className="w-8 h-8 bg-blue-600 rounded-sm"></div>
-            <span>Portfolio</span>
-          </Link>
+      <div className="containerl mx-auto px-6 sm:px-8">
+        <div className="flex items-center justify-center h-16">
 
           {/* Menu de escritorio*/}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-15">
             {navLinks.map((link) => (
               <a
                 key={link.label}

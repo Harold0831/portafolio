@@ -1,2 +1,8 @@
 @import "tailwindcss";
 
+.containerl {
+    width: 100%;
+    @media (width >= 96rem /* 1536px */) {
+        max-width: 110rem /* 1536px */;
+    }
+}
