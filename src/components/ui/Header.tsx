@@ -25,9 +25,9 @@ export default function Header() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-black/95 backdrop-blur-sm z-50">
       <div className="containerl mx-auto px-6 sm:px-8">
-        <div className="flex items-center justify-center h-16">
+        <div className="flex items-center justify-end md:justify-center h-16">
 
           {/* Menu de escritorio*/}
           <div className="hidden md:flex items-center gap-15">
@@ -35,7 +35,7 @@ export default function Header() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium"
+                className="text-gray hover:text-gray-600 transition-colors text-sm font-medium"
                 onClick={(e) => handleNavClick(e, link.href)}
               >
                 {link.label}
