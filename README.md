@@ -16,7 +16,7 @@ Este proyecto es mi portafolio personal, donde presento parte del trabajo que he
 
 ## Integraciones
 - Despliegue en [Vercel](https://vercel.com).
-- (Próximo) Formulario para recibir correos (API propia o servicio externo).
+- (Próximo) Formulario para recibir correos.
 
 ## Características
 - Diseño responsive con Tailwind.
