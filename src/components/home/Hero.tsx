@@ -23,6 +23,10 @@ const Hero = () => {
                 <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
                   Harold G. Jimenez Castro
                 </h1>
+                 <p className="text-white/70 text-lg leading-relaxed max-w-lg">
+                18-EIST-2-019
+              </p>
+                
               </div>
               
               <p className="text-white/70 text-lg leading-relaxed max-w-lg">
