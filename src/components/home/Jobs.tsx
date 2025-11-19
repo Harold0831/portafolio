@@ -23,7 +23,7 @@ const Jobs = () => {
       image: '/hero/swatex.png',
       video: '/videos/Swatex-vid.mov',
       color: 'indigo',
-      url: 'https://swatex.vercel.app/'
+      url: 'https://www.swatexrd.com/'
     },
     {
       id: '2',
